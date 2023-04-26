@@ -13,7 +13,7 @@ import "./Header.scss";
 const Header = () => {
     const [scrolled, setScrolled] = useState(false)
     const handalScroll = () => {
-        const offset = window.screenY
+        const offset = window.scrollY
         if (offset > 200) {
             setScrolled(true)
         }else {
@@ -25,10 +25,11 @@ const Header = () => {
         window.addEventListener("scroll", handalScroll)
     }, []) 
 
+
     return (
         <>
-            {/* <header className={`main-header ${scrolled ? "sticky-header" : ""}`}> */}
-            <header className="main-header">
+            <header className={`main-header ${scrolled ? "sticky-header" : ""}`}>
+            {/* <header className="main-header"> */}
                 <div className="header-content">
                     <ul className="left">
                         <li>Home</li>

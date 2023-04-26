@@ -89,18 +89,18 @@
         }
     }
     &.sticky-header {
-        // background-color: #212121;
-        // color: white;
+        background-color: #212121;
+        color: white;
         position: sticky;
         top: 0;
-        // transform: translateY(-60px);
-        // animation: StickyHeader 0.3s ease forwards;
+        transform: translateY(-60px);
+        animation: stickyHeader 0.3s ease forwards;
     }
 }
 
 @keyframes stickyHeader {
     0% {
-        transform: translateY(-60px);
+        transform: translateY(-80px);
     }
     100% {
         transform: translateY(0);
